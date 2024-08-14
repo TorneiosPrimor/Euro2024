@@ -140,8 +140,6 @@ header, main, footer{
 .logoPrimor{
     width: auto;
     max-width: 6.5rem;
-    background: var(--color-2);
-    padding: .5rem;
     border-radius: .5rem;
 }
 .logoClarito{

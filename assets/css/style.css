@@ -1,7 +1,7 @@
 :root {
     --color-1: #000;
     --color-2: #FFF;
-    --color-3: #143cda;
+    --color-3: #001646;
     /*Cores EUROCOPA*/
     --color-4: #002b91;
     --color-5: #01b961;
@@ -9,8 +9,11 @@
     --color-7: #ffca00;
     --color-8: #d4e2eb;
     --color-9: #1e1e28;
+    --color-10: #0033ff;
+    --color-11: #062dc7;
     
     /* .5rem = 8px | 1rem = 16px */
+    --font-0: 'EA-Sports', Times, serif;
     --font-1: 'Poppins', sans-serif;
     --font-2: 'Times New Roman', Times, serif;
     --biggest-font-size: 3rem;
@@ -56,6 +59,10 @@
     font-family: Poppins;
     src: url(../../fonts/Poppins-Regular.woff) format('truetype');
 }
+@font-face {
+    font-family: EA-Sports;
+    src: url(../../fonts/EA-Sports.woff) format('truetype');
+}
 * {
     /* border: 1px solid red; */
     margin: 0;
@@ -69,13 +76,13 @@ body {
     background-color: var(--color-3);
     background-image: repeating-linear-gradient(
         45deg, 
-        rgba(0, 0, 0, 0.03), 
-        rgba(0, 0, 0, 0.03) 7px, 
+        rgba(0, 0, 0, 0.1), 
+        rgba(0, 0, 0, 0.1) 7px, 
         transparent 1px, 
         transparent 20px
     );
     background-size: 20px 20px;
-    
+
     font-family: var(--font-1);
     font-size: var(--normal-font-size);
     color: var(--color-2);
@@ -86,9 +93,19 @@ body {
     flex-direction: column;
     position: relative;
 }
+.background{
+    position: fixed;
+    background: linear-gradient(to right, var(--color-3), 
+            var(--color-10), 
+            var(--color-3));
+    opacity: .4;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+
 h1, h2, h3, h4, p{
     color: var(--color-2);
-    font-family: var(--font-2);
     font-weight: var(--font-regular);
 }
 ul{
@@ -130,14 +147,8 @@ header, main, footer{
     flex-direction: column;
     flex-wrap: wrap;
 }
-.tabelaArtilhariaAmarelos{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
 
+/* HEADER */
 .header{
     display: flex;
     justify-content: center;
@@ -159,6 +170,8 @@ header, main, footer{
     width: auto;
     max-width: 8rem;
 }
+
+/* TABS MENU */
 .tabs{
     position: sticky;
     z-index: 99;
@@ -167,7 +180,7 @@ header, main, footer{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    background: linear-gradient(to right, var(--color-3), var(--color-4), var(--color-3));
+    background: linear-gradient(to right, var(--color-3), var(--color-11), var(--color-3));
     padding: .7rem;
     margin-bottom: 1rem;
     width: 100%;
@@ -176,7 +189,7 @@ header, main, footer{
 .tabs button{
     color: var(--color-2);
     padding: .5rem;
-    background: #1551db;
+    background: #1352e6;
     border-radius: 5rem;
     transition: .2s ease-in-out;
 }
@@ -186,6 +199,194 @@ header, main, footer{
     transform: translateY(-3px); */
 }
 
+/* TABELA MATA MATA */
+.tabelaMataMata{
+    width: 100%;
+    margin: 16rem auto 1.5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* CARD FINAL */
+.cardFinal{
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    background: linear-gradient(to right, var(--color-3), 
+            var(--color-4), 
+            var(--color-3));
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .3);
+}
+.cardFinal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-3), var(--color-10), var(--color-3));
+}
+.timesTitle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.timesTitle img{
+    height: 80px;
+    width: 80px;
+    background-color: #000;
+    border-radius: 50%;
+    border: 2px solid var(--color-8);
+}
+.titleCardFinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 80px;
+    border-radius: .5rem;
+}
+.titleCardFinal h1, .titleCardFinal i{
+    text-transform: uppercase;
+    margin: 0;
+}
+.textCardFinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.resultadoFinal{
+    margin-top: .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.tacaFinal{
+    position: absolute;
+    top: -16rem;
+    z-index: -1;
+}
+.tacaFinal img{
+    height: 22rem;
+    width: auto;
+}
+
+/* CARD TERCEIRO */
+.cardTerceiro{
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #8b5d2e;
+    /* background: #cd7f32; */
+    background-image: url(../images/bronze\ texture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    border-radius: .5rem;
+    padding: 50px .5rem 1rem .5rem;
+}
+.titlecardTerceiro{
+    position: absolute;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ec943c;
+    width: 200px;
+    height: 60px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+.titlecardTerceiro h2, .titlecardTerceiro i{
+    color: var(--color-1);
+    text-transform: uppercase;
+}
+.titlecardTerceiro i img{
+    height: 10px;
+}
+.cardTerceiro table tr td{
+    text-align: center;
+    padding: .3rem;
+}
+.cardTerceiro table tr td img{
+    width: 40px;
+    height: 40px;
+    border-radius: .3rem;
+    opacity: 50%;
+    background: rgb(39, 39, 39);
+    padding: .3rem;
+    box-shadow: 0px 0px .5rem rgb(0, 0, 0);
+}
+
+/* CARD SEMIFINAL */
+.cardSemi{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, var(--color-3), 
+            var(--color-4), 
+            var(--color-3));
+    box-shadow: 0 5px 10px rgb(0, 0, 0, .3);
+    padding: 2rem .5rem;
+}
+.cardSemi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-3), var(--color-10), var(--color-3));
+}
+.titleCardSemi{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+    margin-bottom: 1rem;
+}
+.titleCardSemi h1, .titleCardSemi i{
+    color: var(--color-2);
+    text-transform: uppercase;
+    margin: 0;
+}
+.cardSemi table tr td{
+    text-align: center;
+    padding: .3rem;
+}
+.cardSemi img{
+    width: 40px;
+    height: 40px;
+    border-radius: .3rem;
+    opacity: 50%;
+    background: rgb(39, 39, 39);
+    padding: .3rem;
+    box-shadow: 0px 0px .5rem rgb(0, 0, 0);
+}
+
+/* CARD TABELA DE JOGOS */
 .tabelaJogos{
     display: flex;
     justify-content: center;
@@ -193,42 +394,133 @@ header, main, footer{
     flex-wrap: wrap;
 }
 .tabelaX{
-    border: 1px solid var(--color-2);
+    /* border: 1px solid var(--color-2); */
     background: var(--color-3);
     margin: .5rem auto;
-    border-radius: 1rem;
     min-width: 25rem;
     display: flex;
     flex-direction: column;
+    background-image: url(../images/Prancheta\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
 }
 .tabelaX h2{
-    font-family: var(--font-1);
     text-align: center;
     padding: 1rem;
 }
-.corTabela1 h2, .corTabela2 h2, .corTabela3 h2, .corTabela4 h2, .corTabela5 h2, .corTabela6 h2, .corTabela7 h2{
-    border-radius: 1rem 1rem 0 0;
-}
 .corTabela1 h2{
+    position: relative;
     background: var(--color-4);
+}
+.corTabela1 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+    var(--color-4),
+    var(--color-10),
+    var(--color-4));
 }
 .corTabela2 h2{
+    position: relative;
     background: var(--color-5);
 }
+.corTabela2 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+    var(--color-5),
+    #1dff92,
+    var(--color-5));
+}
 .corTabela3 h2{
+    position: relative;
     background: var(--color-6);
 }
+.corTabela3 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+    var(--color-6),
+    #ff8b8b,
+    var(--color-6));
+}
 .corTabela4 h2{
+    position: relative;
     background: var(--color-7);
 }
+.corTabela4 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+    var(--color-7),
+    #ffe993,
+    var(--color-7));
+}
 .corTabela5 h2{
+    position: relative;
     background: var(--color-8);
 }
+.corTabela5 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+    var(--color-8),
+    #ffffff,
+    var(--color-8));
+}
 .corTabela6 h2{
+    position: relative;
     background: var(--color-9);
 }
+.corTabela6 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+    var(--color-9),
+    #7b7ba3,
+    var(--color-9));
+}
 .corTabela7 h2{
+    position: relative;
     background: var(--color-4);
+}
+.corTabela7 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right,
+    var(--color-4),
+    var(--color-10),
+    var(--color-4));
 }
 .tabelaX table{
     margin: 1rem auto;
@@ -256,30 +548,41 @@ header, main, footer{
     gap: .5rem;
 }
 
+/* TABELA DE PONTOS */
 .tabelaPontos{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 .tabelaPontos table tr td{
     padding: .4rem;
     text-align: center;
 }
 .tabelaPontosX{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: var(--color-4);
-    min-width: 25rem;
-    padding: 1rem;
-    border-radius: 1rem;
+    background: linear-gradient(to right, var(--color-3), 
+            var(--color-11), 
+            var(--color-3));
+    padding: 1rem ;
     margin: .5rem;
+    min-width: 100%;
+}
+.tabelaPontosX::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-3), var(--color-10), var(--color-3));
 }
 .tabelaPontosX h2{
-    font-family: var(--font-1);
     margin-bottom: .5rem;
 }
 .tabelaPontos table tr td img{
@@ -287,23 +590,48 @@ header, main, footer{
     height: 1rem;
     border-radius: 50%;
 }
-
 .tabelaArtilhariaAmarelos{
-    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
 }
+.corClassificadoGrupo{
+    max-height: 50%;
+    padding: 0rem;
+    border-right: 2px solid #01b961;
+}
+.corDesclassificadoGrupo{
+    max-height: 50%;
+    padding: 0rem;
+    border-right: 2px solid #b90101;
+}
+
+/* ARTILHARIA */
 .tabelaArtilharia{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 0rem;
+    margin-bottom: .5rem;
     padding: 1rem;
-    border-radius: 1rem;
-    background: var(--color-4);
+    background: linear-gradient(to right, var(--color-3), 
+            var(--color-11), 
+            var(--color-3));
     box-shadow: 0 0 2rem rgb(0, 0, 0, .3);
+    min-width: 17rem;
 }
-.tabelaArtilharia strong{
-    font-family: var(--font-1);
+.tabelaArtilharia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-3), var(--color-10), var(--color-3));
 }
 .tabelaArtilharia table tr td{
     padding: .4rem;
@@ -314,15 +642,29 @@ header, main, footer{
     border-radius: 50%;
 }
 
+/* CARD CARTÃO AMARELO */
 .cartoesAmarelos{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 0rem;
+    margin-bottom: .5rem;
     padding: 1rem;
-    border-radius: 1rem;
-    background: var(--color-4);
+    background: linear-gradient(to right, var(--color-3), 
+            var(--color-11), 
+            var(--color-3));
+    box-shadow: 0 0 2rem rgb(0, 0, 0, .3);
+    min-width: 17rem;
+}
+.cartoesAmarelos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-3), var(--color-10), var(--color-3));
 }
 .cartoesAmarelos strong{
     font-family: var(--font-1);
@@ -336,19 +678,30 @@ header, main, footer{
     border-radius: 50%;
 }
 
+/* GALERIA */
 .galeria{
+    position: relative;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 1rem;
-    border-radius: 1rem;
-    background: var(--color-4);
+    background: linear-gradient(to right, var(--color-3), 
+            var(--color-11), 
+            var(--color-3));
     margin: 1rem;
 }
+.galeria::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, var(--color-3), var(--color-10), var(--color-3));
+}
 .galeria h2{
-    font-family: var(--font-1);
     margin-bottom: 1rem;
 }
 .imgGaleria{

@@ -6,21 +6,24 @@
 
 //Função de rolagem menu superior
 document.addEventListener('DOMContentLoaded', function(){
-  const idButtonJogos = document.getElementById('buttonJogos')
+  const idButtonPartidas = document.getElementById('buttonPartidas')
   const idButtonTabela = document.getElementById('buttonTabela')
   const idButtonGaleria = document.getElementById('buttonGaleria')
 
-  const classTabelaJogos = document.querySelector('.tabelaPontos')
+  const classTabelaPontos = document.querySelector('.tabelaPontos')
   const classGaleria = document.querySelector('.galeria')
+  const classTabelaJogos = document.querySelector('.tabelaJogos')
 
-  idButtonJogos.addEventListener('click', function(){
+  idButtonPartidas.addEventListener('click', function(){
+    const targetPosition = classTabelaJogos.getBoundingClientRect().top + window.pageYOffset
+    const offsetPosition = targetPosition - 64
     window.scrollTo({
-      top: 0,
+      top: offsetPosition,
       behavior: 'smooth'
     });
   })
   idButtonTabela.addEventListener('click', function(){
-    const targetPosition = classTabelaJogos.getBoundingClientRect().top + window.pageYOffset
+    const targetPosition = classTabelaPontos.getBoundingClientRect().top + window.pageYOffset
     const offsetPosition = targetPosition - 64
     window.scrollTo({
       top: offsetPosition,

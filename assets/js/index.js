@@ -7,16 +7,26 @@
 //Função de rolagem menu superior
 document.addEventListener('DOMContentLoaded', function(){
   const idButtonPartidas = document.getElementById('buttonPartidas')
+  const idButtonEliminatorias = document.getElementById('buttonEliminatorias')
   const idButtonTabela = document.getElementById('buttonTabela')
   const idButtonGaleria = document.getElementById('buttonGaleria')
 
   const classTabelaPontos = document.querySelector('.tabelaPontos')
+  const classMataMata = document.querySelector('.tabelaMataMata')
   const classGaleria = document.querySelector('.galeria')
   const classTabelaJogos = document.querySelector('.tabelaJogos')
 
   idButtonPartidas.addEventListener('click', function(){
     const targetPosition = classTabelaJogos.getBoundingClientRect().top + window.pageYOffset
-    const offsetPosition = targetPosition - 64
+    const offsetPosition = targetPosition - 128
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  })
+  idButtonEliminatorias.addEventListener('click', function(){
+    const targetPosition = classMataMata.getBoundingClientRect().top + window.pageYOffset
+    const offsetPosition = targetPosition - 128
     window.scrollTo({
       top: offsetPosition,
       behavior: 'smooth'
@@ -24,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function(){
   })
   idButtonTabela.addEventListener('click', function(){
     const targetPosition = classTabelaPontos.getBoundingClientRect().top + window.pageYOffset
-    const offsetPosition = targetPosition - 64
+    const offsetPosition = targetPosition - 128
     window.scrollTo({
       top: offsetPosition,
       behavior: 'smooth'
@@ -32,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function(){
   })
   idButtonGaleria.addEventListener('click', function(){
     const targetPosition = classGaleria.getBoundingClientRect().top + window.pageYOffset
-    const offsetPosition = targetPosition - 64
+    const offsetPosition = targetPosition - 128
     window.scrollTo({
       top: offsetPosition,
       behavior: 'smooth'

@@ -1152,13 +1152,13 @@ function jornada5() {
       </tr>
       <tr>
         <td>${hora11}</td>
-        <td><img src="assets/images/Bandeira ${time1}.png"></td>
-        <td>${time1}</td>
+        <td><img src="assets/images/Bandeira ${time2}.png"></td>
+        <td>${time2}</td>
         <td>${resultado21}</td>
         <td>x</td>
         <td>${resultado22}</td>
-        <td>${time6}</td>
-        <td><img src="assets/images/Bandeira ${time6}.png"></td>
+        <td>${time3}</td>
+        <td><img src="assets/images/Bandeira ${time3}.png"></td>
       </tr>
     </table>
   `

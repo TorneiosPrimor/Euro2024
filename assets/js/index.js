@@ -926,7 +926,7 @@ function exibirHTML2() {
       <td>${totalPontos4}</td> <!-- Pontos -->
     </tr>
     <tr>
-      <td class="tagVermelha"></td>
+      <td class="tagVerde"></td>
       <td>2</td> <!-- Colocação -->
       <td><img src="assets/images/Bandeira ${time6}.png"></td>
       <td>${time6}</td>
@@ -938,7 +938,7 @@ function exibirHTML2() {
       <td>${totalPontos6}</td> <!-- Pontos -->
     </tr>
     <tr>
-      <td class="tagVerde"></td>
+      <td class="tagVermelha"></td>
       <td>3</td> <!-- Colocação -->
       <td><img src="assets/images/Bandeira ${time5}.png"></td>
       <td>${time5}</td>

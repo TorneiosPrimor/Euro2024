@@ -203,7 +203,7 @@ let rodada6 = [
     time1: 'Turquia',
     gols1: 1,
     x: 'x',
-    gols2: 2,
+    gols2: 3,
     time2: 'Croácia',
     bandeira2: 'img',
   }
@@ -926,20 +926,8 @@ function exibirHTML2() {
       <td>${totalPontos4}</td> <!-- Pontos -->
     </tr>
     <tr>
-      <td class="tagVerde"></td>
-      <td>2</td> <!-- Colocação -->
-      <td><img src="assets/images/Bandeira ${time5}.png"></td>
-      <td>${time5}</td>
-      <td>${totalPartidas5}</td> <!-- Jogos -->
-      <td>${totalVitorias5}</td> <!-- Vitórias -->
-      <td>${totalEmpates5}</td> <!-- Empates -->
-      <td>${totalDerrotas5}</td> <!-- Derrotas -->
-      <td>${golsPro5}:${golsContra5}</td> <!-- Gols -->
-      <td>${totalPontos5}</td> <!-- Pontos -->
-    </tr>
-    <tr>
       <td class="tagVermelha"></td>
-      <td>3</td> <!-- Colocação -->
+      <td>2</td> <!-- Colocação -->
       <td><img src="assets/images/Bandeira ${time6}.png"></td>
       <td>${time6}</td>
       <td>${totalPartidas6}</td> <!-- Jogos -->
@@ -948,6 +936,18 @@ function exibirHTML2() {
       <td>${totalDerrotas6}</td> <!-- Derrotas -->
       <td>${golsPro6}:${golsContra6}</td> <!-- Gols -->
       <td>${totalPontos6}</td> <!-- Pontos -->
+    </tr>
+    <tr>
+      <td class="tagVerde"></td>
+      <td>3</td> <!-- Colocação -->
+      <td><img src="assets/images/Bandeira ${time5}.png"></td>
+      <td>${time5}</td>
+      <td>${totalPartidas5}</td> <!-- Jogos -->
+      <td>${totalVitorias5}</td> <!-- Vitórias -->
+      <td>${totalEmpates5}</td> <!-- Empates -->
+      <td>${totalDerrotas5}</td> <!-- Derrotas -->
+      <td>${golsPro5}:${golsContra5}</td> <!-- Gols -->
+      <td>${totalPontos5}</td> <!-- Pontos -->
     </tr>
   `
 }

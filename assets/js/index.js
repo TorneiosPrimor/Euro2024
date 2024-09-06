@@ -203,7 +203,7 @@ let rodada6 = [
     time1: 'Turquia',
     gols1: 1,
     x: 'x',
-    gols2: 1,
+    gols2: 2,
     time2: 'Croácia',
     bandeira2: 'img',
   }

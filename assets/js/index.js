@@ -201,9 +201,9 @@ let rodada6 = [
     hora: '19:30',
     bandeira1: 'img',
     time1: 'Turquia',
-    gols1: null,
+    gols1: 1,
     x: 'x',
-    gols2: null,
+    gols2: 1,
     time2: 'Croácia',
     bandeira2: 'img',
   }

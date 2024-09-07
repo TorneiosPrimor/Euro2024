@@ -232,6 +232,114 @@ let rodada7 = [
   }
 ]
 
+// Artilharia
+let jogadores = [
+  { posicao: 0, bandeira: 'Bélgica', nome: 'Guilherme', gols: 3 },
+  { posicao: 0, bandeira: 'Bélgica', nome: 'Clarito', gols: 1 },
+  { posicao: 0, bandeira: 'Bélgica', nome: 'Rafael', gols: 1 },
+
+  { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 4 },
+  { posicao: 0, bandeira: 'Holanda', nome: 'Gustavo', gols: 2 },
+  { posicao: 0, bandeira: 'Holanda', nome: 'Pedro', gols: 1 },
+
+  { posicao: 0, bandeira: 'Croácia', nome: 'Nero', gols: 6 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'Helton', gols: 3 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'Caio', gols: 2 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'Orivaldo', gols: 1 },
+  
+  { posicao: 0, bandeira: 'Inglaterra', nome: 'Matheus', gols: 1 },
+  { posicao: 0, bandeira: 'Inglaterra', nome: 'Victor', gols: 2 },
+  { posicao: 0, bandeira: 'Inglaterra', nome: 'Rafael', gols: 1 },
+  { posicao: 0, bandeira: 'Inglaterra', nome: 'T. Burgues', gols: 3 },
+
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'João Marcos', gols: 4 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Helbert', gols: 3 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Marcos', gols: 2 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Ayrton', gols: 2 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Adriano', gols: 1 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Bruno', gols: 1 },
+  
+  { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 4 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'Arthur Gabriel', gols: 2 },
+];
+jogadores.sort((a, b) => b.gols - a.gols)
+jogadores.forEach((jogador, index) => {
+  jogador.posicao = index + 1
+});
+function rankingArtilharia() {
+  const rankingDiv = document.getElementById('tabArtilharia')
+  let tabelaHTML = `
+      <h2><strong>Artilharia</strong></h2>
+      <table>
+          <tr>
+              <td>#</td>
+              <td></td>
+              <td></td>
+              <td><img src="assets/icons/bola-icon.svg"></td>
+          </tr>
+  `;
+
+  jogadores.forEach(jogador => {
+      tabelaHTML += `
+          <tr>
+              <td>${jogador.posicao}</td>
+              <td><img src="assets/images/Bandeira ${jogador.bandeira}.png"></td>
+              <td>${jogador.nome}</td>
+              <td>${jogador.gols}</td>
+          </tr>
+      `
+  })
+
+  tabelaHTML += '</table>';
+  rankingDiv.innerHTML = tabelaHTML;
+}
+rankingArtilharia()
+
+//Cartões Amarelos
+let cartoesAmarelos = [
+  { posicao: 0, bandeira: 'Bélgica', nome: 'David', cartao: 1 },
+  { posicao: 0, bandeira: 'Bélgica', nome: 'Clarito', cartao: 1 },
+  { posicao: 0, bandeira: 'Bélgica', nome: 'Luiz Eduardo', cartao: 1 },
+
+  { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', cartao: 2 },
+
+  { posicao: 0, bandeira: 'Croácia', nome: 'Nero', cartao: 2 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'Marquinhos', cartao: 1 },
+  
+  { posicao: 0, bandeira: 'Inglaterra', nome: 'Hamilton', cartao: 1 },
+
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Helbert', cartao: 1 },
+  
+  { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', cartao: 1 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'João Carlos', cartao: 1 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'Juliano', cartao: 1 },
+];
+cartoesAmarelos.sort((a, b) => b.cartao - a.cartao)
+cartoesAmarelos.forEach((jogador, index) => {
+  jogador.posicao = index + 1
+});
+function rankingCartaoAmarelo() {
+  const rankingDiv = document.getElementById('tabCartaoAmarelo')
+  let tabelaHTML = `
+      <h2><strong>Cartões Amarelos</strong></h2>
+      <table>
+  `;
+
+  cartoesAmarelos.forEach(jogador => {
+      tabelaHTML += `
+          <tr>
+              <td><img src="assets/images/Bandeira ${jogador.bandeira}.png"></td>
+              <td>${jogador.nome}</td>
+              <td>${jogador.cartao}</td>
+          </tr>
+      `
+  })
+
+  tabelaHTML += '</table>';
+  rankingDiv.innerHTML = tabelaHTML;
+}
+rankingCartaoAmarelo()
+
 // Coletando datas dos jogos
 data1 = rodada1[0].data
 data2 = rodada2[0].data
@@ -1247,3 +1355,4 @@ function jornada7() {
   `
 }
 jornada7()
+

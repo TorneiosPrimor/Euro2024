@@ -80,27 +80,27 @@ const todosOsTimes = [...grupoA, ...grupoB];
 
 // Resultados das partidas entre todos os times
 const resultados = [
-  { hora: '16:00', time1: 'Bélgica', gols1: 2, time2: 'Holanda', gols2: 4 },
-  { hora: '16:00', time1: 'Croácia', gols1: 3, time2: 'Inglaterra', gols2: 3 },
-  { hora: '16:00', time1: 'Turquia', gols1: 0, time2: 'Dinamarca', gols2: 3 },
+  { hora: '16:30', time1: 'Bélgica', gols1: 2, time2: 'Holanda', gols2: 4 },
+  { hora: '17:20', time1: 'Croácia', gols1: 3, time2: 'Inglaterra', gols2: 3 },
+  { hora: '18:00', time1: 'Turquia', gols1: 0, time2: 'Dinamarca', gols2: 3 },
 
   { hora: '16:00', time1: 'Bélgica', gols1: 2, time2: 'Inglaterra', gols2: 3 },
-  { hora: '16:00', time1: 'Croácia', gols1: 1, time2: 'Dinamarca', gols2: 3 },
+  { hora: '16:50', time1: 'Croácia', gols1: 1, time2: 'Dinamarca', gols2: 3 },
 
-  { hora: '16:00', time1: 'Holanda', gols1: 2, time2: 'Inglaterra', gols2: 1 },
-  { hora: '16:00', time1: 'Bélgica', gols1: 1, time2: 'Croácia', gols2: 5 },
+  { hora: '17:00', time1: 'Holanda', gols1: 2, time2: 'Inglaterra', gols2: 1 },
+  { hora: '18:00', time1: 'Bélgica', gols1: 1, time2: 'Croácia', gols2: 5 },
   
-  { hora: '16:00', time1: 'Holanda', gols1: 2, time2: 'Dinamarca', gols2: 1 },
-  { hora: '16:00', time1: 'Inglaterra', gols1: 6, time2: 'Turquia', gols2: 2 },
+  { hora: '17:00', time1: 'Holanda', gols1: 2, time2: 'Dinamarca', gols2: 1 },
+  { hora: '17:50', time1: 'Inglaterra', gols1: 6, time2: 'Turquia', gols2: 2 },
   
-  { hora: '16:00', time1: 'Inglaterra', gols1: 1, time2: 'Dinamarca', gols2: 7 },
-  { hora: '16:00', time1: 'Holanda', gols1: 0, time2: 'Turquia', gols2: 3 },
+  { hora: '17:00', time1: 'Inglaterra', gols1: 1, time2: 'Dinamarca', gols2: 7 },
+  { hora: '17:50', time1: 'Holanda', gols1: 0, time2: 'Turquia', gols2: 3 },
   
-  { hora: '16:00', time1: 'Dinamarca', gols1: 4, time2: 'Bélgica', gols2: 1 },
-  { hora: '16:00', time1: 'Turquia', gols1: 1, time2: 'Croácia', gols2: 3 },
+  { hora: '18:00', time1: 'Dinamarca', gols1: 4, time2: 'Bélgica', gols2: 1 },
+  { hora: '19:30', time1: 'Turquia', gols1: 1, time2: 'Croácia', gols2: 3 },
   
-  { hora: '16:00', time1: 'Bélgica', gols1: null, time2: 'Turquia', gols2: null },
-  { hora: '16:00', time1: 'Holanda', gols1: null, time2: 'Croácia', gols2: null },
+  { hora: '17:00', time1: 'Bélgica', gols1: null, time2: 'Turquia', gols2: null },
+  { hora: '17:50', time1: 'Holanda', gols1: null, time2: 'Croácia', gols2: null },
 ];
 
 // Função para atualizar a classificação com base nos resultados

@@ -148,7 +148,7 @@ function atualizarClassificacao(resultados, times) {
 // Função para exibir o ranking dos times
 function exibirRanking(times, containerId, titulo) {
   const container = document.getElementById(containerId);
-  let rankingHTML = `<h2>${titulo}</h2>`;
+  let rankingHTML = `<h2><strong>${titulo}</strong></h2>`;
   rankingHTML += `
       <table>
           <tr>
@@ -279,8 +279,8 @@ atualizarClassificacao(resultados, todosOsTimes);
 const timesGrupoA = todosOsTimes.filter(t => t.grupo === 'A');
 const timesGrupoB = todosOsTimes.filter(t => t.grupo === 'B');
 
-exibirRanking(timesGrupoA, 'GrupoA', 'Classificação Grupo A');
-exibirRanking(timesGrupoB, 'GrupoB', 'Classificação Grupo B');
+exibirRanking(timesGrupoA, 'GrupoA', 'Grupo A');
+exibirRanking(timesGrupoB, 'GrupoB', 'Grupo B');
 
 /***********************************************************/
 
@@ -305,7 +305,7 @@ let jogadores = [
   { posicao: 0, bandeira: 'Inglaterra', nome: 'T. Burgues', gols: 3 },
 
   { posicao: 0, bandeira: 'Dinamarca', nome: 'João Marcos', gols: 5 },
-  { posicao: 0, bandeira: 'Dinamarca', nome: 'Helbert', gols: 4 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Helbert', gols: 5 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Marcos', gols: 2 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Ayrton', gols: 2 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Adriano', gols: 2 },
@@ -313,7 +313,7 @@ let jogadores = [
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Yuri', gols: 1 },
   
   { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 4 },
-  { posicao: 0, bandeira: 'Turquia', nome: 'Arthur Gabriel', gols: 2 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'Arthur G.', gols: 2 },
 ];
 jogadores.sort((a, b) => b.gols - a.gols)
 jogadores.forEach((jogador, index) => {

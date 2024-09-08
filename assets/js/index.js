@@ -286,7 +286,7 @@ exibirRanking(timesGrupoB, 'GrupoB', 'Classificação Grupo B');
 
 // Artilharia
 let jogadores = [
-  { posicao: 0, bandeira: 'Bélgica', nome: 'Guilherme', gols: 3 },
+  { posicao: 0, bandeira: 'Bélgica', nome: 'Guilherme', gols: 4 },
   { posicao: 0, bandeira: 'Bélgica', nome: 'Clarito', gols: 1 },
   { posicao: 0, bandeira: 'Bélgica', nome: 'Rafael', gols: 1 },
 
@@ -304,12 +304,13 @@ let jogadores = [
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Rafael', gols: 1 },
   { posicao: 0, bandeira: 'Inglaterra', nome: 'T. Burgues', gols: 3 },
 
-  { posicao: 0, bandeira: 'Dinamarca', nome: 'João Marcos', gols: 4 },
-  { posicao: 0, bandeira: 'Dinamarca', nome: 'Helbert', gols: 3 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'João Marcos', gols: 5 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Helbert', gols: 4 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Marcos', gols: 2 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Ayrton', gols: 2 },
-  { posicao: 0, bandeira: 'Dinamarca', nome: 'Adriano', gols: 1 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Adriano', gols: 2 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Bruno', gols: 1 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Yuri', gols: 1 },
   
   { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 4 },
   { posicao: 0, bandeira: 'Turquia', nome: 'Arthur Gabriel', gols: 2 },
@@ -352,6 +353,7 @@ let cartoesAmarelos = [
   { posicao: 0, bandeira: 'Bélgica', nome: 'David', cartao: 1 },
   { posicao: 0, bandeira: 'Bélgica', nome: 'Clarito', cartao: 1 },
   { posicao: 0, bandeira: 'Bélgica', nome: 'Luiz Eduardo', cartao: 1 },
+  { posicao: 0, bandeira: 'Bélgica', nome: 'Guilherme', cartao: 1 },
 
   { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', cartao: 2 },
 
@@ -361,6 +363,7 @@ let cartoesAmarelos = [
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Hamilton', cartao: 1 },
 
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Helbert', cartao: 1 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Eduardo', cartao: 1 },
   
   { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', cartao: 1 },
   { posicao: 0, bandeira: 'Turquia', nome: 'João Carlos', cartao: 1 },

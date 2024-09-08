@@ -391,3 +391,10 @@ function rankingCartaoAmarelo() {
   rankingDiv.innerHTML = tabelaHTML;
 }
 rankingCartaoAmarelo()
+
+document.getElementById('buttonRegulamento').addEventListener('click', function() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+});

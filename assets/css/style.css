@@ -191,7 +191,7 @@ header, main, footer{
     color: var(--color-2);
     padding: .5rem;
     background: #1352e6;
-    border-radius: 5rem;
+    border-radius: .3rem;
     transition: .2s ease-in-out;
 }
 .tabs button:hover{
@@ -755,4 +755,27 @@ header, main, footer{
 
 .tabelaArtilharia, .cartoesAmarelos, .tabelaX, .tabelaPontosX{
     box-shadow: 0 0 1rem rgb(0, 0, 0, .3);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.btnDownload{
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: var(--normal-font-size);
+    color: #fff;
+    background-color: #1352e6;
+    max-width: 20rem;
+    border-radius: .3rem;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out .4s;
+}
+
+.btnDownload:hover{
+    transform: translateY(-.15rem);
 }

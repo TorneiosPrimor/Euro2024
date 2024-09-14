@@ -99,7 +99,7 @@ const resultados = [
   { hora: '18:00', time1: 'Dinamarca', gols1: 4, time2: 'Bélgica', gols2: 1 },
   { hora: '19:30', time1: 'Turquia', gols1: 1, time2: 'Croácia', gols2: 3 },
   
-  { hora: '17:00', time1: 'Bélgica', gols1: null, time2: 'Turquia', gols2: null },
+  { hora: '17:00', time1: 'Bélgica', gols1: 1, time2: 'Turquia', gols2: 4 },
   { hora: '17:50', time1: 'Holanda', gols1: null, time2: 'Croácia', gols2: null },
 ];
 
@@ -289,8 +289,9 @@ let jogadores = [
   { posicao: 0, bandeira: 'Bélgica', nome: 'Guilherme', gols: 4 },
   { posicao: 0, bandeira: 'Bélgica', nome: 'Clarito', gols: 1 },
   { posicao: 0, bandeira: 'Bélgica', nome: 'Rafael', gols: 1 },
+  { posicao: 0, bandeira: 'Bélgica', nome: 'Alex', gols: 1 },
 
-  { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 4 },
+  { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 5 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Gustavo', gols: 2 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Pedro', gols: 1 },
 
@@ -314,7 +315,7 @@ let jogadores = [
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Bruno', gols: 1 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Yuri', gols: 1 },
   
-  { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 4 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 8 },
   { posicao: 0, bandeira: 'Turquia', nome: 'Arthur G.', gols: 2 },
 ];
 jogadores.sort((a, b) => b.gols - a.gols)

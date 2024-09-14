@@ -291,7 +291,7 @@ let jogadores = [
   { posicao: 0, bandeira: 'Bélgica', nome: 'Rafael', gols: 1 },
   { posicao: 0, bandeira: 'Bélgica', nome: 'Alex', gols: 1 },
 
-  { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 5 },
+  { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 4 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Gustavo', gols: 2 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Pedro', gols: 1 },
 

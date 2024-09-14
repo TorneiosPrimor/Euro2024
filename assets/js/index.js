@@ -291,7 +291,7 @@ let jogadores = [
   { posicao: 0, bandeira: 'Bélgica', nome: 'Rafael', gols: 1 },
   { posicao: 0, bandeira: 'Bélgica', nome: 'Alex', gols: 1 },
 
-  { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 4 },
+  { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 6 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Gustavo', gols: 2 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Pedro', gols: 1 },
 
@@ -299,6 +299,7 @@ let jogadores = [
   { posicao: 0, bandeira: 'Croácia', nome: 'Helton', gols: 3 },
   { posicao: 0, bandeira: 'Croácia', nome: 'Caio', gols: 2 },
   { posicao: 0, bandeira: 'Croácia', nome: 'Orivaldo', gols: 1 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'André', gols: 2 },
   
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Matheus', gols: 2 },
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Victor', gols: 2 },
@@ -362,6 +363,7 @@ let cartoesAmarelos = [
 
   { posicao: 0, bandeira: 'Croácia', nome: 'Nero', cartao: 2 },
   { posicao: 0, bandeira: 'Croácia', nome: 'Marquinhos', cartao: 1 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'Orivaldo', cartao: 1 },
   
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Hamilton', cartao: 1 },
 

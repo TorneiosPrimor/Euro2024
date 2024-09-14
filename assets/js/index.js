@@ -100,7 +100,7 @@ const resultados = [
   { hora: '19:30', time1: 'Turquia', gols1: 1, time2: 'Croácia', gols2: 3 },
   
   { hora: '17:00', time1: 'Bélgica', gols1: 1, time2: 'Turquia', gols2: 4 },
-  { hora: '17:50', time1: 'Holanda', gols1: null, time2: 'Croácia', gols2: null },
+  { hora: '17:50', time1: 'Holanda', gols1: 3, time2: 'Croácia', gols2: 2 },
 ];
 
 // Função para atualizar a classificação com base nos resultados

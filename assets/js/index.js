@@ -311,12 +311,12 @@ let jogadores = [
   { posicao: 0, bandeira: 'Dinamarca', nome: 'João Marcos', gols: 5 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Helbert', gols: 5 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Marcos', gols: 2 },
-  { posicao: 0, bandeira: 'Dinamarca', nome: 'Ayrton', gols: 2 },
-  { posicao: 0, bandeira: 'Dinamarca', nome: 'Adriano', gols: 2 },
-  { posicao: 0, bandeira: 'Dinamarca', nome: 'Bruno', gols: 1 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Ayrton', gols: 3 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Adriano', gols: 3 },
+  { posicao: 0, bandeira: 'Dinamarca', nome: 'Bruno', gols: 2 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Yuri', gols: 1 },
   
-  { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 8 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 9 },
   { posicao: 0, bandeira: 'Turquia', nome: 'Arthur G.', gols: 2 },
 ];
 jogadores.sort((a, b) => b.gols - a.gols)

@@ -303,7 +303,7 @@ let jogadores = [
   
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Matheus', gols: 2 },
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Victor', gols: 2 },
-  { posicao: 0, bandeira: 'Inglaterra', nome: 'Rafael', gols: 4 },
+  { posicao: 0, bandeira: 'Inglaterra', nome: 'Rafael', gols: 2 },
   { posicao: 0, bandeira: 'Inglaterra', nome: 'T. Burgues', gols: 3 },
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Ewerton', gols: 3 },
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Hamilton', gols: 1 },

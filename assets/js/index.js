@@ -293,13 +293,13 @@ let jogadores = [
 
   { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 7 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Gustavo', gols: 2 },
-  { posicao: 0, bandeira: 'Holanda', nome: 'Pedro', gols: 1 },
+  { posicao: 0, bandeira: 'Holanda', nome: 'Pedro', gols: 2 },
 
-  { posicao: 0, bandeira: 'Croácia', nome: 'Nero', gols: 6 },
-  { posicao: 0, bandeira: 'Croácia', nome: 'Helton', gols: 3 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'Nero', gols: 7 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'Helton', gols: 4 },
   { posicao: 0, bandeira: 'Croácia', nome: 'Caio', gols: 2 },
   { posicao: 0, bandeira: 'Croácia', nome: 'Orivaldo', gols: 1 },
-  { posicao: 0, bandeira: 'Croácia', nome: 'André', gols: 2 },
+  { posicao: 0, bandeira: 'Croácia', nome: 'André', gols: 3 },
   
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Matheus', gols: 2 },
   { posicao: 0, bandeira: 'Inglaterra', nome: 'Victor', gols: 2 },

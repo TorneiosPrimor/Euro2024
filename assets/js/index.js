@@ -294,6 +294,8 @@ let jogadores = [
   { posicao: 0, bandeira: 'Holanda', nome: 'Thiago', gols: 7 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Gustavo', gols: 2 },
   { posicao: 0, bandeira: 'Holanda', nome: 'Pedro', gols: 2 },
+  { posicao: 0, bandeira: 'Holanda', nome: 'Alexandre', gols: 1 },
+  { posicao: 0, bandeira: 'Holanda', nome: 'Aéliton', gols: 1 },
 
   { posicao: 0, bandeira: 'Croácia', nome: 'Nero', gols: 7 },
   { posicao: 0, bandeira: 'Croácia', nome: 'Helton', gols: 4 },
@@ -316,8 +318,10 @@ let jogadores = [
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Bruno', gols: 2 },
   { posicao: 0, bandeira: 'Dinamarca', nome: 'Yuri', gols: 1 },
   
-  { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 9 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'Ceara', gols: 10 },
   { posicao: 0, bandeira: 'Turquia', nome: 'Arthur G.', gols: 2 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'João', gols: 1 },
+  { posicao: 0, bandeira: 'Turquia', nome: 'Olívio', gols: 1 },
 ];
 jogadores.sort((a, b) => b.gols - a.gols)
 jogadores.forEach((jogador, index) => {
